@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    background-color: #191c32;
+    color: #fff;
+}
+
+
+/*ESTILOS DEL HEADER*//*ESTILOS DEL HEADER*//*ESTILOS DEL HEADER*//*ESTILOS DEL HEADER*//*ESTILOS DEL HEADER*/
+.header{
+    position:fixed;
+    /*position:fixed; El header se posiciona de forma fija respecto al html*/
+    /*Cuando declaramos la propiedad position como fixed lo que hace es sacar el elemento de su flujo natural del html.
+    Se hecha hacia adelante y se sale del flujo. Esto se coloca "delante del html" por lo tanto tenemos contenido del html
+    que esta siendo tapado por el header, para solucionar esto tenemos que "falsear" el espacio del header añadiendo pading al contenido del html*/
+    left: 0;
+    /*En el eje izquierdo el header estara en la posicion 0 (pegado a la izquierda)*/
+    top: 0;
+    /*En el eje superior el header estara en la posicion 0 (pegado arriba)*/
+    right: 0;
+    /*En el eje derecho el header estara en la posicion 0 (pegado a la derecha)*/
+}
+
+.button{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 1.1em 2em;
+    background: linear-gradient(rgba(25, 28, 50,0.75), rgba(25,  28, 50, 0.75));
+    transition: 1s;
+}
+
+.nav:hover{
+    background: linear-gradient(rgba(25, 28, 50), rgba(25,  28, 50));
+    background-color: #191c32;
+    transition: 1s;
+}
+
+.container{
+    /*Contenedor del "LOGO" WC*/
+    font-size: 1.5em;
+    margin-top: -10px;
+}
+
+.container__h2{ 
+    text-shadow: 2px 2px 3px #00ffff;
+    /*text-shadow: (desplazamiento) (desplazamiento) (desenfoque) (color)*/
+}
+
+.container__h2-span{ 
+    color: #00ffff;
+    text-shadow: 2px 2px 3px #fff;
+    /*text-shadow: (desplazamiento) (desplazamiento) (desenfoque) (color)*/
+}
+
+.container__h2:hover{
+    transform: rotate(-380deg);
+    /*tranform:rotate(); rotacion de elementos*/
+    color: #00ffff;
+    text-shadow: 2px 2px 3px #fff;
+    /*text-shadow: (desplazamiento) (desplazamiento) (desenfoque) (color)*/
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu__li{
+    list-style: none;
+    /*list-style:none; Elimina los puntitos que lleva la lista*/
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    /*text-decoration: none; Elimina la decoracion de los enlaces*/
+    transition: 0.5s;
+    /*transition:0.5s; haciendo esto la transicion regresa suave*/
+}
+
+.menu a:hover{
+    background-color: #20b1b16c;
+    border-radius: 3px;
+    padding: 2em;
+    transition: 0.5s;
+}
+
+.menu .active{
+    color: #00ffff;
+}
+
+@media screen and (max-width:930px){
+    .button{
+        display: block;
+        position:fixed;
+        right: 3em;
+        margin-top: -0.3em;
+        width: 2em;
+        height: 2em;
+        background-color:#00ffff6b;
+        border: none;
+        border-radius: 3em;
+        
+    }
+    
+    .button :hover{
+        transition: .8s;
+        background-color: black;
+    }
+
+    .button__ico{
+        color: #fff;
+        width: 2em;
+        height: 2em;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+        width: 100%;
+    }
+    
+    .menu{
+        flex-flow: row nowrap;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(rgba(5, 7, 12,0.75), rgba(5,  7, 12, 0.75));
+        border-style: inset;
+        border-color: rgba(0, 0, 0, 0.425);
+        border-radius: 0.5em;
+        margin-top: -0.5em;
+        display: none;
+    }
+    
+   .menu.activo{
+        display: flex;
+    }
+
+    .menu__li{
+        margin: 1em 0;
+    }
+    
+    .menu a:hover{
+        background-color: #20b1b1;
+        border-radius: 3px;
+        padding: 1em;
+        transition: 0.5s;
+    }
+
+}
+
+
+/*Estilos del main*/
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    background-color: #191c32;
+}
+
+.main__inicio{
+    align-content: center;
+    margin: 0 0em 0 8em;
+}
+
+.main__inicio-h1{
+    font-size: 3em;
+}
+
+.container__h2-span:hover{
+    color:#fff;
+    text-shadow: 2px 2px 3px #00ffff;
+}
+
+.main__foto{
+    width: 448px;
+    height: 630px;
+    margin: 8em 10em 2em 5em;
+    border: 7px inset #00ffff;
+    border-radius: 60px 0px;
+    transition: 1s;
+}
+
+.main__foto:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+
+.main__button{
+    padding: 10px 20px;
+    color: rgb(87, 84, 84);
+    background-color: #00fcfcb0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 6px 15px -5px rgba(102, 231, 200, .90);
+}
+
+.main__button:hover{
+    background-color: #fff;
+    box-shadow: 5px 6px 15px -5px rgba(179, 178, 178, 0.9);
+    color: #000;
+}
+
+
+@media screen and (max-width:930px){
+    .main{
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+    
+    .main__inicio{
+        align-content: center;
+        margin: 3.5em auto 0em auto;
+        padding: 0 5px 0 5px;
+    }
+    
+    .main__foto{
+        width: 448px;
+        height: 630px;
+        margin: 3em auto 3em auto;
+    }
+
+    .main__button{
+        padding: 15px 20px 15px 20px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .main__foto{
+        display: none;
+    }
+}
+/*Estilo sobreMi*/
+
+.sobreMi{
+    padding: 6em 2em 2em 2em;
+    background: linear-gradient(#191c32,#02b8b8b6, #191c32);
+    background-color: #191c32;
+}
+
+.sobreMi__h2{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-shadow: 10px 10px 10px #000;
+}
+
+.sobreMi__p{
+    padding: 0 1.5em 2em 6em;
+    text-align: justify;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 10px 10px 10px #000;
+}
+
+@media screen and (max-width:930px){
+    .sobreMi__p{
+        padding: 0;
+        text-align: justify;
+        font-size: 2em;
+        text-shadow:none;
+    }
+}
+
+/*Estilo seccion habilidades*/
+
+.habilidades{
+    background:#191c32;
+    border-top: dotted rgb(0, 0, 0) 10px;
+    border-bottom: dotted rgb(0, 0, 0) 10px;
+    padding-bottom: 4em;
+}
+
+.container__FrontEnd{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    opacity: 0;
+    transition: 2s;
+}
+
+
+.container__BackEnd{    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    opacity: 0;
+    transition: 2s;
+}
+
+.container__Otras{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    opacity: 0;
+    transition: 2s;
+}
+
+.habilidades__iconos{
+    padding: 1em 1em 1em 1em;
+    max-width: 212px;
+    max-height: 212px;
+    transition: 1s;
+}
+
+.habilidades__iconos:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.habilidades__h2{
+    color: #fff;
+    text-shadow: 10px 10px 10px #000;
+    font-size: 3em;
+    padding: 1.3em 0em  0em 0.6em;
+}
+
+.habilidades__h3{
+    color: #fff;
+    text-shadow: 10px 10px 10px #000;
+    font-size: 2em;
+    padding: 2em 0em 0em 1em;
+}
+
+.h4{
+    font-size: 1em;
+    color: #fff;
+}
+
+@media screen and (max-width:1080px){
+    
+    .habilidades__iconos{
+        margin-bottom: 3em;
+    }
+    .container__FrontEnd{
+        justify-content: center;
+    }
+    
+    .container__Otras{
+        justify-content: center;    
+    }
+}
+
+
+/*Estilo seccion proyectos*/
+
+.proyectos{
+    background-color: #191c32;
+    border-bottom: dotted rgb(0, 0, 0) 10px;
+}
+
+.proyectos__container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3em;
+
+    opacity: 0;
+    transition: 2s;
+}
+
+.proyectos-h2{
+    color: #fff;
+    text-shadow: 10px 10px 10px #000;
+    font-size: 3em;
+    padding: 1.5em 0em  1em 0.6em;
+}
+
+.proyectos__pro{
+    width: 19em;
+    height: 28em;
+    background-color: #2b3058;
+    margin: 1em;
+    border-bottom: #fff;
+    text-align:center;
+}
+
+.img{
+    width: 100%;
+    background-size: cover;
+}
+
+.proyectos__pro-h3{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.link{
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+
+/*Estilo seccion contacto*/
+
+.contacto{
+    background-color: #191c32;
+    padding-bottom: 2em;
+}
+
+.contacto__h2{
+    color: #fff;
+    text-shadow: 10px 10px 10px #000;
+    font-size: 3em;
+    padding: 1em 0em  1em 0.6em;
+}
+
+
+.contacto__formulario{
+    background-color: #2b3058;
+    width: 90%;
+    margin: auto;
+    max-width: 500px;
+    padding: 3em 1em;
+    border-radius: 1em;
+
+    opacity: 0;
+    transition: 2s;
+}
+
+.contacto__formulario-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+
+.contacto__formulario-container--input{
+    font-size: 1em;
+    padding: 0.8em 1em;
+    outline: none;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.contacto__formulario-container--tex{
+    font-size: 1em;
+    outline: none;
+    resize: none;
+    padding: 3em 1em;
+    margin-bottom: 0.8em;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.enviar{
+    background-color:#00ffff;
+    border: #2b3058 solid;
+}
+
+.enviar:hover{
+    background-color:  #2b3058;
+    color: #fff;
+    border: solid;
+    transition: 1s;
+}
+
+.contacto__redes{
+    padding-top: 1em;
+    text-align: center;
+
+
+    opacity: 0;
+    transition: 2s;
+}
+
+.fa-brands{
+    transition: 1s;
+}
+
+.fa-brands:hover{
+    transition: 1s;
+    transform: scale(2);
+}
+
+.fa-solid{
+    transition: 1s;
+}
+
+.fa-solid:hover{
+    transition: 1s;
+    transform: scale(2);
+}
+
+/*Estilo seccion footer*/
+
+.footer{
+    background-color:#000;
+    padding: 1em;
+}
+
+.footer__p{
+    font-size: 1em;
+    color: #fff;
+}
+
+
+/*scroll*/
+.show{
+    opacity: 1;
+    transition: 2s;
+}

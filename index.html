@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--(width=device-width)Le estamos diciendo al navegador que el ancho de la pagina sea igual al ancho del dispositivo (initial-scale=1) y que la escala sea siempre del 100%-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://kit.fontawesome.com/3f86d370c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/programacion.png">
+    <title>Williams C.</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <div class="container">
+                    <h2 class="container__h2">W<span class="container__h2-span">C</span></h2>
+                </div>
+                <button class="button">
+                    <svg class="button__ico" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <ul class="menu">
+                    <li class="menu__li"><a  class="active" href="#">Inicio</a></li>
+                    <li class="menu__li"><a href="#sobreMi">Sobre mí</a></li>
+                    <li class="menu__li"><a href="#habilidades">Habilidades</a></li>
+                    <li class="menu__li"><a href="#proyectos">Proyectos</a></li>
+                    <li class="menu__li"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="main__inicio">
+                <h1 class="main__inicio-h1">Hola, <br> soy Williams <samp class="container__h2-span">Cantero.</samp><br>
+                    Desarrollador Web Full Stack Jr.
+                </h1>
+                <a download="" href="./archivos/screencapture-127-0-0-1-5500-index-html-2022-11-08-11_48_09.pdf" target="_blank" rel="noopener noreferrer">
+                    <button class="main__button"><b>Download CV</b></button>  
+                </a>
+            </div>
+                <img class="main__foto" src="./img/foto.jpg" alt="Williams Cantero">
+        </main>
+    </div>
+
+<div class="sobreMi" id="sobreMi">
+     <h2 class="sobreMi__h2">Sobre Mi</h2>
+    <p class="sobreMi__p"  id="animacionSobreMiP">
+          <b>
+             Como leyeron al comienzo soy un desarrollador web Jr. Esto quiere decir es que aún me falta mucho por conocer tanto
+             del desarrollo como del mundo laboral, para muchos estos sería una desventaja o algo “malo” pero para mí solo es otra meta
+             a conquistar, despues de todo no solo soy un desarrollador web y técnico en informática también soy un eterno estudiante que
+             vive por y para conocer.<br>
+             Actualmente estoy buscando formar parte de proyectos para aumentar mis conocimientos y crecer profesionalmente.
+         </b>
+    </p>
+</div>
+
+<div class="habilidades" id="habilidades">
+    <h2 class="habilidades__h2"> <b>Habilidades</b></h2>
+    <h3 class="habilidades__h3">FrontEnd</h3>
+    <div id="ico__front" class="container__FrontEnd">
+        <div class="habilidades__iconos">
+            <img src="img/html-5.png" alt="HTML">
+            <h4 class="h4">HTML</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/css-3.png" alt="CSS">
+            <h4 class="h4">CSS</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/js (1).png" alt="JavaScript">
+            <h4 class="h4">JavaScript</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/bootstrap.png" alt="bootstrap">
+            <h4 class="h4">Bootstrap</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/angular.png"alt="angular">
+            <h4 class="h4">Angular</h4>
+        </div>
+    </div>
+    <h3 class="habilidades__h3">BackEnd</h3>
+    <div id="ico_back" class="container__BackEnd">
+        <div class="habilidades__iconos">
+            <img src="img/java.png" alt="java">
+            <h4 class="h4">Java</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/mysql.png" alt="MySQL">
+            <h4 class="h4">MySQL</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/Spring Boot.png" alt="Spring Boot">
+            <h4 class="h4">Spring Boot</h4>
+        </div>
+    </div>
+    <h3 class="habilidades__h3">Otras</h3>
+    <div id="ico_otras" class="container__Otras">
+        <div class="habilidades__iconos">
+            <img src="img/git (1).png" alt="Git">
+            <h4 class="h4">Git</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/github.png" alt="GitHub">
+            <h4 class="h4">GitHub</h4>
+        </div>
+        <div class="habilidades__iconos">
+            <img src="img/visual-studio.png" alt="Visual Studio">
+            <h4 class="h4">Visual Studio Code</h4>
+        </div>
+         <div class="habilidades__iconos">
+            <img src="img/netbeans.png" alt="Netbeans">
+            <h4 class="h4">Netbeans</h4>
+         </div>
+    </div>
+</div>
+
+<div class="proyectos" id="proyectos">
+    <h2 class="proyectos-h2">Proyectos</h2>
+
+    <div class="proyectos__container" id="proyectosAnimacion">
+
+        <div class="proyectos__pro">
+            <img class="img" src="img/calculadora-simple.png" alt="calculadora">
+            <h3 class="proyectos__pro-h3">Calculadora Simple</h3>
+            <a class="link" href="https://github.com/williamsCTR/Calculadora-Simple" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github ico"></i>
+            </a>
+            <a class="link" href="https://unrivaled-dodol-a9713b.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-globe"></i>
+            </a>
+        </div>
+
+        <div class="proyectos__pro">
+            <img src="img/mascultura_v2.png" alt="masCulturaClon">
+            <h3 class="proyectos__pro-h3"> <i>Clon:</i> Más Cultura</h3>
+            <a class="link" href="https://github.com/williamsCTR/Clon-MasCultura" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a> 
+            <a class="link" href="https://comforting-bunny-d7ee55.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-globe"></i>
+            </a>
+        </div>
+
+        <div class="proyectos__pro">
+            <img src="img/app--clima.png" alt="pronosticoDelTiempo">
+            <h3 class="proyectos__pro-h3">Pronostico del tiempo</h3>
+            <a class="link" href="https://github.com/williamsCTR/web-clima" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+  <!--     <a class="link" href="http://" target="_blank">
+                <i class="fa-solid fa-globe"></i>
+            </a>
+            -->
+        </div>
+    </div>
+</div>
+
+<div class="contacto" id="contacto">
+    <h2 class="contacto__h2">Contacto</h2>
+    
+    <form   class="contacto__formulario"
+            id="formularioAnimacion"
+            action=""
+            method=""
+    >
+        <div class="contacto__formulario-container">
+            <input class="contacto__formulario-container--input" placeholder="Nombre:"type="nombre" name="name" required>
+            <input class="contacto__formulario-container--input" placeholder="Email:" type="email" name="email" required>
+            <textarea class="contacto__formulario-container--tex" placeholder="Mensaje" name="message" required></textarea>
+            <input type="submit" value="Enviar" class="contacto__formulario-container--input enviar" >
+        </div>
+    </form>
+    <div class="contacto__redes" id="redesAnimacion"> 
+        <a class="contacto__redes-ico link" href="https://www.instagram.com/willy_cantero/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="contacto__redes-ico link" href="https://www.facebook.com/williamsEcantero/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="contacto__redes-ico link" href=" https://wa.me/5493855302882" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a class="contacto__redes-ico link"  href="https://www.linkedin.com/in/williams-cantero-a6757a229/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="contacto__redes-ico link" href="https://github.com/williamsCTR" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="footer__p"><i>©Williams Cantero Developer</i></p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
